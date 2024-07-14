@@ -49,3 +49,11 @@ h1:focus {
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
 }
+
+.rating i, span {
+    margin-left: 5px;
+}
+
+.rating .checked {
+    color: orange;
+}

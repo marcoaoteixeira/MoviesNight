@@ -1,0 +1,6 @@
+﻿<div class="rating">
+    @for (var star = 1; star <= Stars; star++) {
+        <i class="bi bi-star-fill @AddChecked(star)"></i>
+    }
+    <span>@GetScoreRepresentation()</span>
+</div>

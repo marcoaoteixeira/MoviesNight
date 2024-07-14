@@ -10,6 +10,11 @@ namespace Nameless.MoviesNight {
                    .AddRazorComponents()
                    .AddInteractiveServerComponents();
 
+            builder.Services
+                   .RegisterOptions()
+                   .RegisterMemoryCache()
+                   .RegisterTmdbService();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -1,0 +1,15 @@
+﻿<div class="card" style="width: 18rem;">
+    <img src="@GetImageUrl()" class="card-img-top" alt="@Model.Title">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <p class="card-text">@Model.Overview</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <Rating ActualScore="Model.VoteAverage" MaxScore="10" Stars="5" />
+        </li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="btn btn-primary">Go to movie page</a>
+    </div>
+</div>

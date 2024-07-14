@@ -1,0 +1,22 @@
+﻿@page "/search"
+@rendermode InteractiveServer
+
+<div class="row">
+    <h2>Search for your next movie: </h2>
+    <div class="col-md-12 mb-3">
+        <div class="input-group">
+            <input type="text" id="search-input" class="form-control" placeholder="Search..." @bind="Query"/>
+            <button class="btn btn-outline-success" id="search-button" @onclick="HandleSearch">Search</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mb-3">
+    @foreach (var item in SearchResults) {
+        <div class="col-sm-3 mb-3 d-flex justify-content-center">
+            <SearchResultItemCard Model="item" />
+        </div>
+    }
+    </div>
+</div>
